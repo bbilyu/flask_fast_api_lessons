@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="../static/css/style.css"/>
+    <title>Document</title>
+</head>
+<body>
+<h2 style="display: none">Body site</h2>
+<header>
+    <div class="banner container_top">
+        <div class="header_navigation">
+            <div class="header_buttons left_side">
+                <a href="/" class="header__btns logo"
+                ><img src="../static/image/header_logo.svg" alt="logo"
+                /></a>
+                <a href="/" class="header__btns btn-searc"
+                ><img
+                        src="../static/image/header_search_button.svg"
+                        alt="search_button"
+                /></a>
+            </div>
+            <div class="header_buttons right_side">
+                <div class="slide__menu">
+                    <h3 class="slide__menu_heading">MENU</h3>
+                    <div class="slide__menu_box">
+                        <div class="slide__menu_item">
+<!--                            <a href="#" class="slide__menu_title">MAN</a>-->
+                            <ul class="slide__menu_list">
+                                <li><a class="slide__menu_link" href="/jackets">Jackets</a></li>
+                                <li><a class="slide__menu_link" href="/t_shirts">T-Shirts</a></li>
+                                <li><a class="slide__menu_link" href="/polos">Polos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="/" class="header__btns profile_button"
+                ><img
+                        src="../static/image/header_profile_button.svg"
+                        alt="profile_button"
+                /></a>
+                <a href="/" class="header__btns shopping_cart"
+                ><img
+                        src="../static/image/header_shopping_cart.svg"
+                        alt="shopping_cart"
+                /></a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    {% block content %}
+    {% endblock content %}
+</main>
+<footer>
+    <section class="copyright container_top">
+        <div class="footer_copyright_left_side">
+            <h2>© 2022 Brand All Rights Reserved.</h2>
+        </div>
+        <div class="footer_copyright_right_side">
+            <a href="#" class="footer__btns facebook"
+            ><img
+                    src="../static/image/footer_copyright_facebook.svg"
+                    alt="facebook"
+            /></a>
+            <a href="#" class="footer__btns instagram"
+            ><img
+                    src="../static/image/footer_copyright_instagram.svg"
+                    alt="instagram"
+            /></a>
+            <a href="#" class="footer__btns pinterest"
+            ><img
+                    src="../static/image/footer_copyright_pinterest.svg"
+                    alt="pinterest"
+            /></a>
+            <a href="#" class="footer__btns twitter"
+            ><img
+                    src="../static/image/footer_copyright_twitter.svg"
+                    alt="twitter"
+            /></a>
+        </div>
+    </section>
+</footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <div class="display-3">
+        {% if user %}
+            <p>Вы вошли под именем {{ user }}</p>
+        {% endif %}
+        <p>К прочтению предлагается {{ number }}
+            {% if number == 1 %}
+                пост
+            {% elif 2 <= number <= 4 %}
+                поста
+            {% else %}
+                постов
+            {% endif %}
+        </p>
+    </div>
+</body>
+</html>
