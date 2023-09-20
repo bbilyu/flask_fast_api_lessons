@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <div class="display-3">
+        <p class="row">
+            {% for item in poems %}
+                <span class="title_second_row_black">{{ item }}</span>
+            {% endfor %}
+        </p>
+    </div>
+</body>
+</html>
